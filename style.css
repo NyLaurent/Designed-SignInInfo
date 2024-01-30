@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Ubuntu:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik Burned", system-ui;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  height: 100vh;
+  background: rgb(102, 179, 102);
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(102, 179, 102);
+  clip-path: circle(30% at right 70%);
+}
+
+.content {
+  position: relative;
+  width: 350px;
+  height: 500px;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(102, 179, 102);
+  left: 350px;
+  top: 180px;
+  box-shadow: 20px 0px 5x rgb(102, 179, 102);
+}
+.input_box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+
+  letter-spacing: 0.12rem;
+}
+.buto {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.links {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -40px;
+  right: 80px;
+}
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.content2 {
+  position: relative;
+  top: 60px;
+}
+.play {
+  color: rgb(102, 179, 102);
+  padding-bottom: 20px;
+  position: absolute;
+  top: 30px;
+  left: 130px;
+}
+
+.bar {
+  width: 260px;
+  height: 40px;
+  border: 1px solid rgb(102, 179, 102);
+  background: rgb(102, 179, 102);
+
+  outline: none;
+  background: transparent;
+}
+.titles {
+  position: absolute;
+  padding-bottom: 70px;
+}
+.david {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: rgb(102, 179, 102);
+  color: #fff;
+}
+.sign {
+  position: absolute;
+  right: -70px;
+  text-decoration: none;
+  color: rgb(102, 179, 102);
+  bottom: -30px;
+}
+.account {
+  position: absolute;
+  left: -210px;
+  bottom: -30px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    color: rgb(102, 179, 102);
+  }
+  .body {
+    width: 100px;
+  }
+  .box {
+    width: 200px;
+  }
+  .content {
+    left: 100px;
+  }
+}
